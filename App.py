@@ -8,7 +8,8 @@ class App(Frame):
     # call superclass
     def __init__(self,master=None):
         super().__init__(master)
-        self.master.title("Haksolok Database!")
+        self.master.iconbitmap("icon.ico")
+        self.master.title("Haksolok Database")
         self.master.geometry("800x600")
         self.pack()
 

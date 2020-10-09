@@ -12,6 +12,14 @@ class App(Frame):
         self.master.title("Haksolok Database")
         self.master.geometry("800x600")
         self.pack()
+        # call method here
+        self.all_here()
+
+    # create a method
+    def all_here(self):
+        Heading = Label(self, text="Dadus Formandu", font=("ApercuMono.ttf",32))
+        Heading.pack()
+
 
 root = Tk()
 crud = App(master=root)

@@ -11,41 +11,6 @@ db = mysql.connector.connect(
 
 mycursor = db.cursor()
 
-# mycursor.execute("CREATE DATABASE python_crud")
-
-# mycursor.execute("SHOW DATABASES")
-# for x in mycursor:
-    # print(x)
-
-# mycursor.execute("CREATE TABLE estudent (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255), email VARCHAR(255))")
-
-# mycursor.execute("DESC estudent")
-# for x in mycursor:
-    # print(x)
-
-# sql = "INSERT INTO estudent (name,address,email) VALUES (%s,%s,%s)"
-"""
-val = [
-    ("Angelina Pinto","Hera","angelinapint@gmail.com"),
-    ("Alexandra Perreira","Pante Kelapa","alexandraper@gmail.com"),
-    ("Basilio Mendonca","Lahane","basiliomendonca@gmail.com"),
-    ("Donacio da Cruz","Becora","donaciodacr@gmail.com"),
-    ("Elia Amaral","Hudi Laran","eliamaral@gmail.com")
-]
-"""
-
- #mycursor.executemany(sql,val)
-
-# db.commit()
-
-# print(mycursor.rowcount, "record(s) inserted!")
-
-mycursor.execute("SELECT * FROM estudent")
-
-result = mycursor.fetchall()
-
-for x in result:
-    print(x)
 
 # template
 class App(Frame):
@@ -64,6 +29,17 @@ class App(Frame):
     def all_here(self):
         Heading = Label(self, text="Dadus Formandu", font=("ApercuMono.ttf",32))
         Heading.pack()
+
+        # call read_date method here
+        self.read_date()
+
+    def read_date(self):
+        mycursor.execute("SELECT * FROM estudent")
+        result = mycursor.fetchall()
+
+        for takeone in result:
+            for x in takeone:
+                Label(self, text=f"{x}").pack()
 
 
 root = Tk()

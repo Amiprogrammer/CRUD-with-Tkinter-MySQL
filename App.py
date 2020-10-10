@@ -33,14 +33,19 @@ class App(Frame):
         insert_button = Button(self, text="Insert Date", bg="red", fg="white", font=("ApercuMono.ttf",10), command=self.insert_date)
         insert_button.pack(pady=10)
 
-        # call read_date method here
-        self.read_date()
+        read_button = Button(self, text="View Date", bg="green", fg="white", font=("ApercuMono.ttf",10), command=self.read_date)
+        read_button.pack(pady=10)
 
     def read_date(self):
+        read = Toplevel(self)
+        read.iconbitmap("icon.ico")
+        read.title("Read Date")
+        read.geometry("600x400")
+
         mycursor.execute("SELECT * FROM estudent")
         result = mycursor.fetchall()
 
-        form_index_frame = Frame(self)
+        form_index_frame = Frame(read)
         form_index_frame.pack()
 
         ApercuMono = ("ApercuMono.ttf",16)
@@ -73,12 +78,12 @@ class App(Frame):
             email_estudent.grid(row=i, column=9, columnspan=4)
 
     def insert_date(self):
-        top = Toplevel(self)
-        top.iconbitmap("icon.ico")
-        top.title("Insert Date")
-        top.geometry("400x300")
+        self.insert = Toplevel(self)
+        self.insert.iconbitmap("icon.ico")
+        self.insert.title("Insert Date")
+        self.insert.geometry("400x300")
 
-        insert_frame = Frame(top)
+        insert_frame = Frame(self.insert)
         insert_frame.pack()
 
         heading_insert = Label(insert_frame, text="Insert Date", font=("ApercuMono.ttf",20))
@@ -129,6 +134,7 @@ class App(Frame):
             self.insert_name.delete(0,END)
             self.insert_address.delete(0,END)
             self.insert_email.delete(0,END)
+            self.insert.destroy()
         else:
             messagebox.showerror(f"{mycursor.rowcount} record(s) not inserted!")
             self.insert_name.delete(0,END)

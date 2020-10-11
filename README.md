@@ -4,7 +4,7 @@
 
 # my design progject
 
-<img width=“964” alt=“arquitecture CRUD ” src=“https://github.com/Amiprogrammer/CRUD-with-Tkinter-MySQL/blob/main/Tumbnails/CRUD.png”>
+<img src="https://github.com/Amiprogrammer/CRUD-with-Tkinter-MySQL/blob/main/Tumbnails/CRUD.png" width="250">
 
 # see other repository
 * [Tkinter-GUI-Programming](https://github.com/Amiprogrammer/Tkinter-GUI-Programming)

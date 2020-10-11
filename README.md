@@ -4,8 +4,8 @@
 
 # my design progject
 
-<img width=“964” alt=“java 8 and prio java 8  array review example” src=“https://github.com/Amiprogrammer/CRUD-with-Tkinter-MySQL/blob/main/Tumbnails/CRUD.png 73”>
+<img width=“964” alt=“arquitecture CRUD ” src=“https://github.com/Amiprogrammer/CRUD-with-Tkinter-MySQL/blob/main/Tumbnails/CRUD.png”>
 
 # see other repository
-### [Tkinter-GUI-Programming](https://github.com/Amiprogrammer/Tkinter-GUI-Programming)
-### [Python-MySQL](https://github.com/Amiprogrammer/Python-MySQL)
+* [Tkinter-GUI-Programming](https://github.com/Amiprogrammer/Tkinter-GUI-Programming)
+* [Python-MySQL](https://github.com/Amiprogrammer/Python-MySQL)

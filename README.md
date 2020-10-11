@@ -4,7 +4,7 @@
 
 # my design progject
 
-<img src="https://github.com/Amiprogrammer/CRUD-with-Tkinter-MySQL/blob/main/Tumbnails/CRUD.png" width="250">
+<img src="https://github.com/Amiprogrammer/CRUD-with-Tkinter-MySQL/blob/main/Tumbnails/CRUD.png" width="600" height="400">
 
 # see other repository
 * [Tkinter-GUI-Programming](https://github.com/Amiprogrammer/Tkinter-GUI-Programming)
